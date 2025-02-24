@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Convite - Chá Revelação</title>
   <!-- Importando fontes do Google -->
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Roboto', sans-serif;
@@ -26,7 +26,7 @@
       text-align: center;
     }
     h1 {
-      font-family: 'Pacifico', cursive;
+      font-family: 'Lobster', cursive;
       color: #d63384;
       margin-bottom: 20px;
     }
@@ -42,6 +42,13 @@
       margin-bottom: 20px;
       color: #777;
       font-size: 1.1em;
+    }
+    /* Mensagem do convite */
+    .invitation-message {
+      font-size: 1em;
+      color: #555;
+      margin-bottom: 20px;
+      line-height: 1.5;
     }
     form {
       display: flex;
@@ -70,23 +77,23 @@
       cursor: pointer;
     }
     .radio-menina {
-      color: #ff69b4; /* Rosa */
+      color: #6f42c1; /* Roxo para menina */
     }
     .radio-menino {
-      color: #1e90ff; /* Azul */
+      color: #28a745; /* Verde para menino */
     }
     button {
       padding: 10px 20px;
-      background-color: #d63384;
+      background-image: linear-gradient(to right, #28a745, #6f42c1);
       color: #fff;
       border: none;
       border-radius: 4px;
       font-size: 1em;
       cursor: pointer;
-      transition: background 0.3s;
+      transition: background 0.3s, transform 0.3s;
     }
     button:hover {
-      background-color: #b1286d;
+      transform: scale(1.02);
     }
   </style>
 </head>
@@ -97,6 +104,11 @@
       Coloque a foto aqui
     </div>
     <h1>Convite - Chá Revelação</h1>
+    <div class="invitation-message">
+      <p>
+        Olá, pessoal.. Vocês ainda não sabem o meu nome, mas irão descobrir logo logo. Meus pais estão muito animados pela minha chegada, por isso, gostaríamos de convidá-los para celebrarmos juntos o dia que vocês irão descobrir quem sou! No dia xx a partir das 14 horas. Confirme sua presença, desde já agradeço, saiba que você já é importante para mim! Até logo, nos vemos em breve.
+      </p>
+    </div>
     <form id="rsvpForm">
       <input type="text" id="fullName" placeholder="Nome completo" required>
       <input type="email" id="email" placeholder="Email" required>
