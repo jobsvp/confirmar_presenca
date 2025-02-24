@@ -95,6 +95,24 @@
     button:hover {
       transform: scale(1.02);
     }
+    .extra-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .extra-buttons a {
+      text-decoration: none;
+      padding: 10px 20px;
+      background-image: linear-gradient(to right, #28a745, #6f42c1);
+      color: #fff;
+      border-radius: 4px;
+      font-size: 1em;
+      transition: transform 0.3s;
+    }
+    .extra-buttons a:hover {
+      transform: scale(1.02);
+    }
   </style>
 </head>
 <body>
@@ -125,6 +143,10 @@
       </div>
       <button type="submit">Confirmar Presença</button>
     </form>
+    <div class="extra-buttons">
+      <a href="https://www.google.com/maps?q=Local+Do+Evento" target="_blank">Ver no Maps</a>
+      <a href="reserva.html" target="_blank">Reserva de Presentes</a>
+    </div>
   </div>
 
   <script>
