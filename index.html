@@ -40,8 +40,13 @@
       align-items: center;
       justify-content: center;
       margin-bottom: 20px;
-      color: #777;
-      font-size: 1.1em;
+      overflow: hidden;
+    }
+    .photo-placeholder img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
     }
     /* Mensagem do convite */
     .invitation-message {
@@ -118,8 +123,7 @@
 <body>
   <div class="container">
     <div class="photo-placeholder">
-      <!-- Espaço para inserir a foto do convite -->
-      Coloque a foto aqui
+      <img src="img/banner.jpeg" alt="Banner do Convite">
     </div>
     <h1>Convite - Chá Revelação</h1>
     <div class="invitation-message">
